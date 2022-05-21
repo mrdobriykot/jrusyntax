@@ -8,7 +8,6 @@ public class Solution {
    private static final String alphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯабвгдеёжзийклмнопрстуфхцчшщъьэюя.,:-!? \"";
 
 
-
     public static void main(String[] args) {
         boolean work = true;
         while (work) {
