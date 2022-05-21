@@ -15,7 +15,7 @@ public class Solution {
         while (work) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("1 - зашифровать, 2 - расшифровать, 3 - буртфорс шифра. 4 - выход");
-            System.out.print("Выберите действе: ");
+            System.out.print("Выберите действие: ");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1 -> encrypt();
