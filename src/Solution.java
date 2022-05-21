@@ -9,7 +9,6 @@ public class Solution {
 
 
 
-
     public static void main(String[] args) {
         boolean work = true;
         while (work) {
@@ -25,7 +24,6 @@ public class Solution {
             }
         }
     }
-
 
 
     public static void encrypt() {
