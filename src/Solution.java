@@ -8,21 +8,21 @@ public class Solution {
    private static final String alphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯабвгдеёжзийклмнопрстуфхцчшщъьэюя.,:-!? \"";
 
 
-    public static void main(String[] args) {
-        boolean work = true;
-        while (work) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("1 - зашифровать, 2 - расшифровать, 3 - брутфорс шифра. 4 - выход");
-            System.out.print("Выберите действие: ");
-            int choice = scanner.nextInt();
-            switch (choice) {
-                case 1 -> encrypt();
-                case 2 -> decrypt();
-                case 3 -> brute_force();
-                case 4 -> work = false;
-            }
-        }
-    }
+//    public static void main(String[] args) {
+//        boolean work = true;
+//        while (work) {
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println("1 - зашифровать, 2 - расшифровать, 3 - брутфорс шифра. 4 - выход");
+//            System.out.print("Выберите действие: ");
+//            int choice = scanner.nextInt();
+//            switch (choice) {
+//                case 1 -> encrypt();
+//                case 2 -> decrypt();
+//                case 3 -> brute_force();
+//                case 4 -> work = false;
+//            }
+//        }
+//    }
 
 
     public static void encrypt() {
@@ -61,7 +61,7 @@ public class Solution {
     }
 
 
-    private static void crypt_data_from_file(String planTextFile, String encryptedFile, int shift, boolean enc_flag) {
+    public static void crypt_data_from_file(String planTextFile, String encryptedFile, int shift, boolean enc_flag) {
         try(FileReader reader = new FileReader(planTextFile);
             FileWriter writer = new FileWriter(encryptedFile,true)
         ) {
